@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Image Imagine </title>
+
+	<link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="mainpage">
+		<!--This class is for the main page-->
+		<img src="images/source.gif">
+		<h1>Image Imagine by Edwin, Alex, Wai</h1>
+
+
+		<div id="uploadpic" class="center">
+			<img src="images/nike.jpg" />
+		</div>
+
+		<div class="slidingbar">
+			<form id="imageEditor">
+				<!--This form is for the button -->
+				<table>
+
+					<th>
+						<p>
+							<label for="gs">Grayscale</label>
+							<input id="gs" name="gs" type="range" min=0 max=100 value=0>
+						</p>beauti
+						<p>
+							<label for="opacity">Cloudiness</label>
+							<input id="opacity" name="opacity" type="range" min=0 max=100 value=0>
+						</p>
+					</th>
+
+
+
+					<th>
+						<p>
+							<label for="blur">Blur</label>
+							<input id="blur" name="blur" type="range" min=0 max=10 value=0>
+						</p>
+						<p>
+							<label for="invert">Overturn</label>
+							<input id="invert" name="invert" type="range" min=0 max=100 value=0>
+						</p>
+					</th>
+
+
+					<th>
+						<p>
+							<label for="huer">Hue Rotate</label>
+							<input id="huer" name="huer" type="range" min=0 max=360 value=0>
+						</p>
+						<p>
+							<label for="br">Shine Me</label>
+							<input id="br" name="br" type="range" min=0 max=200 value=0>
+						</p>
+					</th>
+
+
+
+					<th>
+						<p>
+							<label for="ct">Contrast</label>
+							<input id="ct" name="ct" type="range" min=0 max=200 value=0>
+						</p>
+						<p>
+							<label for="saturate">Saturate</label>
+							<input id="saturate" name="saturate" type="range" min=0 max=500 value=0>
+						</p>
+					</th>
+
+
+					<th>
+						<p>
+							<label for="sepia">Sepia</label>
+							<input id="sepia" name="sepia" type="range" min=0 max=100 value=0>
+						</p>
+						<p>
+							<br><br>
+						</p>
+					</th>
+
+					<th>
+						<p>
+							<input type="reset" form="imageEditor" id="reset" value="Reset" />
+						</p>
+						<p>
+							<label id="uploadyourpicture">
+						<input id="upload_img" style="display:none;" type="file">
+						Upload
+						</label>
+						</p>
+					</th>
+
+					<th>
+						<p>
+							<input type="button" form="" id="button" value="Take a photo" />
+							<!--This is for take a photo-->
+						</p>
+						<p>
+							<input type="button" form="" id="button" value="Dowload" />
+							<!--This is for download the result-->
+						</p>
+					</th>
+
+				</table>
+			</form>
+		</div>
+
+	</div>
+</body>
+
+
+
+</html>

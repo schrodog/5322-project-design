@@ -1,0 +1,174 @@
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.mainpage {
+  max-width: 960px;
+  min-width: 960px;
+  padding: 10px;
+  margin: 2.5% auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+}
+
+form {
+  text-align: center;
+}
+
+#uploadpic img {
+  width: 100%;
+}
+
+/* Styles for the uploaded picture*/
+
+#uploadpic {
+  border: 2px solid #000;
+  display: inline-block;
+  padding: 5px;
+  vertical-align: top;
+  margin-left: 1%;
+  width: 100%;
+}
+
+/* Below are the Styles for buttons at the bottom*/
+
+.slidingbar p {
+  /* Styles for the bar */
+  margin: 60px 0;
+  vertical-align: middle;
+}
+
+.slidingbar input {
+  /* Styles for each button */
+  position: relative;
+  margin: 10px 20px 0 10px;
+  vertical-align: middle;
+}
+
+.slidingbar label {
+  /* Styles for button description */
+  display: inline-block;
+  width: 100px;
+  font-size: 1.1rem;
+  color: #22313F;
+  text-align: center;
+}
+
+input[type=range] {
+  width: 120px;
+  -webkit-appearance: none;
+  border-radius: 5px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 7px;
+  background: #ABB7B7;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 20px;
+  background: #4B77BE;
+  margin-top: -6px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:hover {
+  cursor: pointer;
+}
+
+#reset {
+  /* Styles for  reset button  */
+  display: inline-block;
+  height: 2.0rem;
+  width: 95%;
+  background-color: #22A7F0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  border: 1px transparent;
+}
+
+#reset:hover {
+  /* effect of reset  button  */
+  color: #22A7F0;
+  background-color: #fff;
+  border: 2px solid #22A7F0;
+}
+
+#uploadyourpicture {
+  /* Styles for  upload picture button  */
+  display: inline-block;
+  height: 2.0rem;
+  width: 95%;
+  background-color: #22A7F0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  border: 1px transparent;
+}
+
+#uploadyourpicture:hover {
+  /* effect of uploadyourpicture button  */
+  color: #22A7F0;
+  background-color: #fff;
+  border: 2px solid #22A7F0;
+}
+
+#button {
+  /* Styles for  reset button  */
+  display: inline-block;
+  height: 2.0rem;
+  width: 95%;
+  background-color: #22A7F0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 10px 10px 10px 10px;
+  border: 1px transparent;
+}
+
+#button:hover {
+  /* effect of last two buttons button  */
+  color: #22A7F0;
+  background-color: #fff;
+  border: 2px solid #22A7F0;
+}
