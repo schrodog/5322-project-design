@@ -5,7 +5,11 @@
 	<meta charset="utf-8">
 	<title>Image Processing</title>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="CSS/main.css" type="text/css" rel="stylesheet">
+
+	<link rel="stylesheet" href="./lib/farbtastic/farbtastic.css" type="text/css" />
+	<script type="text/javascript" src="./lib/farbtastic/farbtastic.js"></script>
 </head>
 
 <body>
@@ -100,6 +104,7 @@
 			<form style="display:none;">
 				<input type="text" id="show-color" value="#123456" readonly/>
 			</form>
+
 			<div id="colorpicker"></div>
 			<label for="pen-alpha">opacity</label>
 			<input name="pen-alpha" type="range" min=0 max=1 step="0.01" value=1 />
