@@ -35,11 +35,322 @@ form {
   text-align: center;
 }
 
+
+/* The defination below are for control button ONLY */
+	#crop-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 10px;
+	border: 1px transparent;;
+	
+}
+
+	#save-crop-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+	#resize-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+	#save-resize-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#delete-pic-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#grey-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#color-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+	#invert-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#mask-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	
+	#sepia-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#solarize-btn {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+	
+	#font-family {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #fff ;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color:#22A7F0 ;
+	margin: 10px 1px 10px 1px;
+	border color: #22A7F0;
+	
+}
+
+
+	#input_text {
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 10px;
+	border: 1px transparent;;
+	
+}
+	#align_left{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+	
+	#align_center{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#align_right{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#align_right{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#align_justify{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+	#align_justify{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+	
+	#text_bold{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+	#text_italic{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+	#text_underline{
+	display: inline-block;
+	height: 1.5rem;
+	background-color: #22A7F0;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	font-size: 1rem;
+	color: #fff;
+	margin: 10px 1px 10px 1px;
+	border: 1px transparent;;
+	
+}
+
+
+/* The defination above are for control button ONLY */
+
 #uploadpic img {
   width: 100%;
 }
 
 /* Styles for the uploaded picture*/
+
+
 
 #uploadpic {
   border: 2px solid #000;
