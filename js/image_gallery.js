@@ -28,6 +28,7 @@ window.onload = loadown;
 to_gallery.onclick = () => {
   while(img_container.firstChild) {
       img_container.removeChild(img_container.firstChild)
-    }
-    loadshare();
+  }
+  document.getElementById("title").innerHTML = "Public Gallery";
+  loadshare();
 };
