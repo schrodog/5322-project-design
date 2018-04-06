@@ -14,8 +14,14 @@
 
 <body>
 	<div id="mainpage">
-		<h1>Image Processing</h1>
-		
+        <div id="navBar">
+            <h1>Image Processing</h1>
+            <div id="navBarGroup">
+                <button class="imageEditorButtons" id="resetButton">Logout</button>
+                <button class="imageEditorButtons" id="resetButton">Goto Gallery</button>
+            </div>
+		</div>
+        
 		<div id="contentArea">
 			<div id="contentAreaLeft">
 				<div id="imageEditor">
@@ -91,46 +97,52 @@
 			</div>
 			<div id="contentAreaRight">
 				<div id="control-btn">
-					<button class="controlButtons" id="crop-btn">crop</button>
-					<button class="controlButtons" id="save-crop-btn">save crop</button>
-					<button class="controlButtons" id="resize-btn">resize</button>
-					<button class="controlButtons" id="save-resize-btn">save resize</button>
-					<button class="controlButtons" id="delete-pic-btn">delete picture</button>
-					<button class="controlButtons" id="grey-btn">grey</button>
-					<button class="controlButtons" id="color-btn">color</button>
-					<button class="controlButtons" id="invert-btn">invert</button>
-					<button class="controlButtons" id="mask-btn">mask</button>
-					<button class="controlButtons" id="sepia-btn">sepia</button>
-					<br>
-					<button class="controlButtons" id="solarize-btn">solarize</button>
-					<button class="controlButtons" id="input_text">Enter Text</button>
-					<button class="controlButtons" id="align_left" class="img_btn">Go left</button>
-					<button class="controlButtons" id="align_right" class="img_btn">Go Right</button>
-					<button class="controlButtons" id="align_center" class="img_btn">Go Center</button>
-					<button class="controlButtons" id="align_justify" class="img_btn">Justify</button>
-					<button class="controlButtons" id="text_bold" class="img_btn">Bold me!</button>
-					<button class="controlButtons" id="text_italic" class="img_btn">Italic</button>
-					<button class="controlButtons" id="text_underline" class="img_btn">Underline</button> 
-					<br>
-					<label for="font-family">&nbsp; &nbsp;Font:</label> <!-- This is Font Family section -->
-					<select id="font-family" name="font-family">
-					<option value="Arial">Arial</option>
-					<option value="Arial Black">Arial Black</option>
-					<option value="Comic Sans MS">Comic Sans MS</option>
-					<option value="Georgia">Georgia</option>
-					<option value="Palatino Linotype">Palatino Linotype</option>
-					<option value="Times New Roman">Times New Roman</option>
-					<option value="Impact">Impact</option>
-					<option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
-					<option value="Tahoma">Tahoma</option>
-					<option value="Trebuchet MS">Trebuchet MS</option>
-					<option value="Verdana">Verdana</option>
-					<option value="Courier New">Courier New</option>
-					<option value="Lucida Console">Lucida Console</option> 
-					</select> <!-- End of Font Family section -->
-
-					<label for="font_size">Font Size</label>
-					<input id="font_size" type="range" min=5 max=60 step=1 value=25>
+                    <div class="ctrlBtnGroup">
+                        <button class="controlButtons" id="crop-btn">crop</button>
+                        <button class="controlButtons" id="save-crop-btn">save crop</button>
+                        <button class="controlButtons" id="resize-btn">resize</button>
+                        <button class="controlButtons" id="save-resize-btn">save resize</button>
+                        <button class="controlButtons" id="delete-pic-btn">delete picture</button>
+                    </div>
+                    <div class="ctrlBtnGroup">
+                        <button class="controlButtons" id="grey-btn">grey</button>
+                        <button class="controlButtons" id="color-btn">color</button>
+                        <button class="controlButtons" id="invert-btn">invert</button>
+                        <button class="controlButtons" id="mask-btn">mask</button>
+                        <button class="controlButtons" id="sepia-btn">sepia</button>
+                        <button class="controlButtons" id="solarize-btn">solarize</button>
+                    </div>
+                    <div class="ctrlBtnGroup">
+                        <button class="controlButtons" id="align_left" class="img_btn">Go left</button>
+                        <button class="controlButtons" id="align_right" class="img_btn">Go Right</button>
+                        <button class="controlButtons" id="align_center" class="img_btn">Go Center</button>
+                        <button class="controlButtons" id="align_justify" class="img_btn">Justify</button>
+                        <button class="controlButtons" id="text_bold" class="img_btn">Bold me!</button>
+                        <button class="controlButtons" id="text_italic" class="img_btn">Italic</button>
+                        <button class="controlButtons" id="text_underline" class="img_btn">Underline</button>
+                    </div>
+                    <div class="ctrlBtnGroup">
+                        <button class="controlButtons" id="input_text">Enter Text</button>
+                        <label for="font-family">&nbsp; &nbsp;Font:</label> <!-- This is Font Family section -->
+                        <select id="font-family" name="font-family">
+                            <option value="Arial">Arial</option>
+                            <option value="Arial Black">Arial Black</option>
+                            <option value="Comic Sans MS">Comic Sans MS</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Palatino Linotype">Palatino Linotype</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Impact">Impact</option>
+                            <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                            <option value="Tahoma">Tahoma</option>
+                            <option value="Trebuchet MS">Trebuchet MS</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Courier New">Courier New</option>
+                            <option value="Lucida Console">Lucida Console</option>
+                        </select> <!-- End of Font Family section -->
+                        <p></p>
+                        <label for="font_size">Size:</label>
+                        <input id="font_size" type="range" min=5 max=60 step=1 value=25>
+                    </div>
 				</div>
 				
 				<div id="uploadpic">
