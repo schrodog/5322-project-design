@@ -13,157 +13,130 @@
 </head>
 
 <body>
-	<div class="mainpage">
-
+	<div id="mainpage">
 		<h1>Image Processing</h1>
-
-
-		<div id="uploadpic" class="center">
-			<img src="images/abc.jpg" />
-		</div>
-
-		<div id="control-btn">
-			<button id="crop-btn">crop</button>
-			<button id="save-crop-btn">save crop</button>
-			<button id="resize-btn">resize</button>
-			<button id="save-resize-btn">save resize</button>
-			<button id="delete-pic-btn">delete picture</button>
-			<button id="grey-btn">grey</button>
-			<button id="color-btn">color</button>
-			<button id="invert-btn">invert</button>
-			<button id="mask-btn">mask</button>
-			<button id="sepia-btn">sepia</button>
-			<button id="solarize-btn">solarize</button>
-			<br>
-			<button id="input_text">Enter Text</button>
-			<button id="align_left" class="img_btn">Go left</button>
-			<button id="align_right" class="img_btn">Go Right</button>
-			<button id="align_center" class="img_btn">Go Center</button>
-			<button id="align_justify" class="img_btn">Justify</button>
-			<button id="text_bold" class="img_btn">Bold me!</button>
-			<button id="text_italic" class="img_btn">Italic</button>
-			<button id="text_underline" class="img_btn">Underline</button> 
-			<br>
-			<label for="font-family">&nbsp; &nbsp;Font:</label> <!-- This is Font Family section -->
-			<select id="font-family" name="font-family">
-		    <option value="Arial">Arial</option>
-		    <option value="Arial Black">Arial Black</option>
-		    <option value="Comic Sans MS">Comic Sans MS</option>
-		    <option value="Georgia">Georgia</option>
-		    <option value="Palatino Linotype">Palatino Linotype</option>
-		    <option value="Times New Roman">Times New Roman</option>
-		    <option value="Impact">Impact</option>
-		    <option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
-		    <option value="Tahoma">Tahoma</option>
-		    <option value="Trebuchet MS">Trebuchet MS</option>
-		    <option value="Verdana">Verdana</option>
-		    <option value="Courier New">Courier New</option>
-		    <option value="Lucida Console">Lucida Console</option> 
-			</select> <!-- End of Font Family section -->
-			
-			<label for="font_size">Font Size</label>
-			<input name="font_size" type="range" min=5 max=60 step=1 value=25>
-			
-			
-			
-			
-		</div>	
 		
-		<div class="slidingbar">
+		<div id="contentArea">
+			<div id="contentAreaLeft">
+				<div id="imageEditor">
+					<button class="imageEditorButtons" id="resetButton">Reset</button>
+					<button class="imageEditorButtons" id="uploadButton">
+						<label id="uploadYourPicture">
+							<input id="upload_img" style="display:none;" type="file">
+							Upload
+						</label>
+					</button>
+					<button class="imageEditorButtons" id="takePhotoButton" accept="image/*;capture=camera" multiple>Take a photo</button>
+					<button class="imageEditorButtons" id="downloadButton">Dowload</button>
+				</div>
 				
-				<p id="first-control">
-					<label for="brightness-range">Brightness</label>
-					<input id="brightness-range" type="range" min=-1 max=1 step="0.01" value=0>
-				</p>
-				<p>
-					<label for="contrast-range">Contrast</label>
-					<input id="contrast-range" type="range" min=-100 max=100 value=0>
-				</p>
-				<p>
-					<label for="blur">Blur</label>
-					<input id="blur-range" type="range" min=0 max=10 value=0>
-				</p>
-				<p>
-					<label for="hue-range">Hue</label>
-					<input id="hue-range" type="range" min=0 max=360 value=0>
-				</p>
-				<p>
-					<label for="saturate-range">Saturate</label>
-					<input id="saturate-range" type="range" min=0 max=1 value=0 step="0.01">
-				</p>
+				<div id="slidingbar">
+					<p id="first-control">
+						<label for="brightness-range">Brightness</label>
+						<input id="brightness-range" type="range" min=-1 max=1 step="0.01" value=0>
+					</p>
+					<p>
+						<label for="contrast-range">Contrast</label>
+						<input id="contrast-range" type="range" min=-100 max=100 value=0>
+					</p>
+					<p>
+						<label for="blur">Blur</label>
+						<input id="blur-range" type="range" min=0 max=10 value=0>
+					</p>
+					<p>
+						<label for="hue-range">Hue</label>
+						<input id="hue-range" type="range" min=0 max=360 value=0>
+					</p>
+					<p>
+						<label for="saturate-range">Saturate</label>
+						<input id="saturate-range" type="range" min=0 max=1 value=0 step="0.01">
+					</p>
 
-				<p>
-					<label for="lightness-range">Lightness</label>
-					<input id="lightness-range" type="range" min=-1 max=1 value=0 step="0.01">
-				</p>
+					<p>
+						<label for="lightness-range">Lightness</label>
+						<input id="lightness-range" type="range" min=-1 max=1 value=0 step="0.01">
+					</p>
 
-				<p>
-					<label for="mask-range">Mask</label>
-					<input id="mask-range" type="range" min=0 max=1 step=0.01 value=0.5>
-				</p>
-				<p>
-					<label for="noise-range">Noise</label>
-					<input id="noise-range" type="range" min=0 max=1 step=0.01 value=0>
-				</p>
-				<p>
-					<label for="pixelate-range">Pixelate</label>
-					<input id="pixelate-range" type="range" min=0.001 max=10 step=0.1>
-				</p>
-				<p>
-					<label for="posterize-range">Posterize</label>
-					<input id="posterize-range" type="range" min=0 max=1 step=0.01 value=1>
-				</p>
+					<p>
+						<label for="mask-range">Mask</label>
+						<input id="mask-range" type="range" min=0 max=1 step=0.01 value=0.5>
+					</p>
+					<p>
+						<label for="noise-range">Noise</label>
+						<input id="noise-range" type="range" min=0 max=1 step=0.01 value=0>
+					</p>
+					<p>
+						<label for="pixelate-range">Pixelate</label>
+						<input id="pixelate-range" type="range" min=0.001 max=10 step=0.1>
+					</p>
+					<p>
+						<label for="posterize-range">Posterize</label>
+						<input id="posterize-range" type="range" min=0 max=1 step=0.01 value=1>
+					</p>
 
-				<p>
-					<label for="rotate-range">Rotate</label>
-					<input id="rotate-range" type="range" min=0 max=359 value=0>
-				</p>
-				<p>
-					<label for="alpha-range">Alpha</label>
-					<input id="alpha-range" type="range" min=0 max=1 value=1 step=0.01>
-				</p>
-			
-				<p>
-					<label for="pen-alpha">Opacity</label>
-					<input name="pen-alpha" type="range" min=0 max=1 step="0.01" value=1 />
-				</p>
+					<p>
+						<label for="rotate-range">Rotate</label>
+						<input id="rotate-range" type="range" min=0 max=359 value=0>
+					</p>
+					<p>
+						<label for="alpha-range">Alpha</label>
+						<input id="alpha-range" type="range" min=0 max=1 value=1 step=0.01>
+					</p>
+				
+					<p>
+						<label for="pen-alpha">Opacity</label>
+						<input name="pen-alpha" type="range" min=0 max=1 step="0.01" value=1 />
+					</p>
+				</div>
 			</div>
-		
-		<form id="imageEditor">
-			<!--This form is for the button -->
-			<p>
-			<input type="reset" form="imageEditor" id="reset" value="Reset" />
-			</p>
-			<p>
-				<label id="uploadyourpicture">
-						<input id="upload_img" style="display:none;" type="file">
-						Upload
-				</label>
-			</p>
-			
-			<p>
-				<input type="button" form="" id="button" value="Take a photo" accept="image/*;capture=camera" multiple/>
-				<!--This is for take a photo-->
-			</p>
-			
-			<p>
-				<input type="button" form="" id="button" value="Dowload" />
-				<!--This is for download the result-->
-			</p>
-		
-		</form>
+			<div id="contentAreaRight">
+				<div id="control-btn">
+					<button class="controlButtons" id="crop-btn">crop</button>
+					<button class="controlButtons" id="save-crop-btn">save crop</button>
+					<button class="controlButtons" id="resize-btn">resize</button>
+					<button class="controlButtons" id="save-resize-btn">save resize</button>
+					<button class="controlButtons" id="delete-pic-btn">delete picture</button>
+					<button class="controlButtons" id="grey-btn">grey</button>
+					<button class="controlButtons" id="color-btn">color</button>
+					<button class="controlButtons" id="invert-btn">invert</button>
+					<button class="controlButtons" id="mask-btn">mask</button>
+					<button class="controlButtons" id="sepia-btn">sepia</button>
+					<br>
+					<button class="controlButtons" id="solarize-btn">solarize</button>
+					<button class="controlButtons" id="input_text">Enter Text</button>
+					<button class="controlButtons" id="align_left" class="img_btn">Go left</button>
+					<button class="controlButtons" id="align_right" class="img_btn">Go Right</button>
+					<button class="controlButtons" id="align_center" class="img_btn">Go Center</button>
+					<button class="controlButtons" id="align_justify" class="img_btn">Justify</button>
+					<button class="controlButtons" id="text_bold" class="img_btn">Bold me!</button>
+					<button class="controlButtons" id="text_italic" class="img_btn">Italic</button>
+					<button class="controlButtons" id="text_underline" class="img_btn">Underline</button> 
+					<br>
+					<label for="font-family">&nbsp; &nbsp;Font:</label> <!-- This is Font Family section -->
+					<select id="font-family" name="font-family">
+					<option value="Arial">Arial</option>
+					<option value="Arial Black">Arial Black</option>
+					<option value="Comic Sans MS">Comic Sans MS</option>
+					<option value="Georgia">Georgia</option>
+					<option value="Palatino Linotype">Palatino Linotype</option>
+					<option value="Times New Roman">Times New Roman</option>
+					<option value="Impact">Impact</option>
+					<option value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+					<option value="Tahoma">Tahoma</option>
+					<option value="Trebuchet MS">Trebuchet MS</option>
+					<option value="Verdana">Verdana</option>
+					<option value="Courier New">Courier New</option>
+					<option value="Lucida Console">Lucida Console</option> 
+					</select> <!-- End of Font Family section -->
 
-
-			<input type="file" id="take-pic" accept="image/*;capture=camera" style="display:none;">
-
-			
-
-
-
-
+					<label for="font_size">Font Size</label>
+					<input id="font_size" type="range" min=5 max=60 step=1 value=25>
+				</div>
+				
+				<div id="uploadpic">
+					<img src="images/abc.jpg" />
+				</div>
+			</div>
 		</div>
+	</div>
 </body>
-
-
-
-</html>
