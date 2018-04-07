@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Image Imagination</title>
+		<link rel="stylesheet" href="CSS/image_gallery.css">
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Image Imagination</title>
-  <link rel="stylesheet" href="CSS/image_gallery.css">
+	<body>
 
-</head>
-
-<body>
-
-<nav>
-  <button id="logout">Logout</button>
-  <button id="new-image">New image</button>
-  <button id="to-gallery">Go to gallery</button>
-</nav>
-
-<h1 id="title">Saved Workspace</h1>
-
-<h2>Welcome back, <span id="username"></span> </h2>
-
-<div class="container" id="img-container">
-</div>
-
-
-
-<script src="js/image_gallery.js"></script>
-
-</body>
+		<div id="mainpage">
+			<div id="navBar">
+				<h1 id="title"><span id="username">User</span>'s Gallery</h1>
+				<div id="navBarGroup">
+					<button id="logout">Logout</button>
+					<button id="new-image">New image</button>
+					<button id="to-gallery">Go to gallery</button>
+				</div>
+			</div>
+		</div>
+		
+		<h2>Welcome back, <span id="username">user</span> </h2>
+		<div class="container" id="img-container">
+		
+		<script src="js/image_gallery.js"></script>
+	</body>
 </html>
